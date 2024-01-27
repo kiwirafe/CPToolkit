@@ -3,7 +3,6 @@ using namespace std;
 
 const int N = 10000;
 int root[N];
-int height[N];
 
 vector<pair<int, pair<int, int>>> edges;
 vector<int> ans;
@@ -17,24 +16,18 @@ int find(int x) {
 void unite(int a, int b) {
     a = find(a);
     b = find(b);
-    if (height[a] < height[b]) swap(a, b);
-    height[a] += height[b];
     root[b] = a;
 }
 
-void kruskal(int noden) {
-    for(int i = 1; i <= noden; i++) {
-        root[i] = i;
-        height[i] = 1;
-    }
-    
+void kruskal(int noden) { // 0-indexed
+    iota(begin(root), begin(root) + noden, 0);
     sort(edges.begin(), edges.end());
     for(int i = 0; i < edges.size(); i++) {
         int w = edges[i].first;
-        int x = edges[i].second.first, y = edges[i].second.second;
-        if(find(x) == find(y)) continue;
+        int a = edges[i].second.first, b = edges[i].second.second;
+        if(find(a) == find(b)) continue;
         ans.push_back(i);
-        unite(x, y);
+        unite(a, b);
     }
 }
 

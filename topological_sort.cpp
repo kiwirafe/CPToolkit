@@ -29,7 +29,7 @@ void topological_sort(int noden) {
 
     if (flag)
         ans.clear();
-    else return;
+    else
         reverse(ans.begin(), ans.end());
 }
 
