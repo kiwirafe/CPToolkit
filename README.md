@@ -1,5 +1,5 @@
-# OIToolkit
-Personal Informatics Toolkit - used for Codeforces and other occasions.
+# CPToolkit
+Personal Competitive Programming Toolkit - used for Codeforces and other occasions.
 
  - [bellmanford_negative.cpp](bellmanford_negative.cpp): detects negative cycles using Bellman Ford.
  - [bellmanford.cpp](bellmanford.cpp): calculates Shortest Path using Bellman Ford.
