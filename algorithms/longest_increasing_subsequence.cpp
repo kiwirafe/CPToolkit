@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int lis(vector<int>& nums) {
+// Find the length of the longest increasing subsequence in an array
+int longest_increasing_subsequence(const vector<int>& nums) {
     int l, r, len = 0;
     int tails[nums.size()];
 
@@ -22,7 +23,7 @@ int lis(vector<int>& nums) {
 
 int main() {
     vector<int> nums = {10, 9, 2, 5, 3, 7, 101, 18};
-    int len = lis(nums);
+    int len = longest_increasing_subsequence(nums);
 
     return 0;
 }
