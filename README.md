@@ -2,41 +2,45 @@
 
 Personal Competitve Programming Toolkit - used for Codeforces and other occasions.
 
-#### Algorithms
-
+### Algorithms
 * [`longest_common_subsequence.cpp`](algorithms/longest_common_subsequence.cpp): finds the Longest Common Subsequence (LCS) using DP.
 * [`longest_increasing_subsequence.cpp`](algorithms/longest_increasing_subsequence.cpp): finds the Longest Increasing Subsequence (LIS) using binary search.
 * [`max_subarray_sum.cpp`](algorithms/max_subarray_sum.cpp): finds the maximum subarray sum using Kadane’s Algorithm.
 
-### Divide and Conquer
 
+### Divide and Conquer
 * [`bigint_mul.cpp`](divide_and_conquer/bigint_mul.cpp): performs large integer multiplication using D&C.
 * [`count_inversions.cpp`](divide_and_conquer/count_inversions.cpp): finds the number of inversions in an array using D&C.
 * [`mergesort.cpp`](divide_and_conquer/mergesort.cpp): standard Merge Sort implementation.
 
+
 ### Dynamic Programming
+* [`max_cons_elements.cpp`](dp/max_cons_elements.cpp): finds the maximum sum of array elements with at most `n` consecutive elements.
+* [`rod_cutting.cpp`](dp/rod_cutting.cpp): finds the maximize sum from cutting a rod into pieces (rod cutting problem).
 
-* [`max_cons_elements.cpp`](dynamic_programming/max_cons_elements.cpp): finds the maximum sum of array elements with at most `n` consecutive elements.
+
+#### Bitmask DP
+* [`count_tilings.cpp`](dp/bitmask_dp/count_tiling.cpp): count the number of ways to fill an `n * m` grid using `1 * 2` and `2 * 1` tiles using bitmask DP.
+
+
 ### Graphs
-
 * [`bfs.cpp`](graphs/bfs.cpp): standard Breadth First Search (BFS) traversal.
 * [`dfs.cpp`](graphs/dfs.cpp): standard Depth First Search (DFS) traversal.
 * [`topological_sort.cpp`](graphs/topological_sort.cpp): performs Topological Sorting on a DAG.
 
 
 ### Minimum Spanning Tree
-
 * [`kruskal.cpp`](minimum_spanning_tree/kruskal.cpp): finds Minimum Spanning Tree using Kruskal’s Algorithm.
 
-### Range Queries
 
+### Range Queries
 * [`segment_tree_max.cpp`](range_queries/segment_tree_max.cpp): implements Segment Tree for range maximum queries.
 * [`segment_tree_min.cpp`](range_queries/segment_tree_min.cpp): implements Segment Tree for range minimum queries.
 * [`segment_tree_sum.cpp`](range_queries/segment_tree_sum.cpp): implements Segment Tree for range sum queries.
 * [`segment_tree_recursive.cpp`](range_queries/segment_tree_recursive.cpp): implements Segment Tree using recursive approach.
 
-### Shortest Path
 
+### Shortest Path
 * [`dijkstra.cpp`](shortest_path/dijkstra.cpp): finds shortest paths using Dijkstra’s Algorithm.
 * [`dijkstra_path.cpp`](shortest_path/dijkstra_path.cpp): finds shortest paths using Dijkstra’s Algorithm with path reconstruction.
 * [`bellman_ford_negative.cpp`](shortest_path/bellman_ford_negative.cpp): detects negative cycles using Bellman-Ford's algorithm.
