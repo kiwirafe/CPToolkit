@@ -46,4 +46,4 @@ Personal Competitve Programming Toolkit - used for Codeforces and other occasion
 
 
 ### Tools
-* [`binpow.cpp`](tools/binpow.cpp): finds a^n using binary exponen
+* [`binpow.cpp`](tools/binpow.cpp): finds a^n using Binary Exponentiation
